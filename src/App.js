@@ -1,15 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowerRouter as Router,Switch,Route,Link} from 'react-router-dom'; 
 
-class App extends Component{
-  render(){
-    return(
-      <div className="conatiner">
-        <h2>React CRUD by Hasi 😋</h2>
-      </div>
-    );
-  }
-}
-export default App;
+import Create from './Components/create.component';
+import Edit from './Components/edit.component';
+import Index from './Components/index.component';
 
