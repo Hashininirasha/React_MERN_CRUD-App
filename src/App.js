@@ -27,9 +27,17 @@ class App extends Component{
               </ul>
             </div>
           </nav>
-        </div>
+        
         <h2>Welcome to React Crud 🤔👧</h2>
+        <switch>
+          <Route exact path = '/create' component = {Create} />
+          <Route exact path = '/edit/:id' component = {Edit} />
+          <Route exact path = '/index' component = {Index} />
+        </switch>
+        </div>
       </Router>
-    )
+    );
   }
 }
+
+export default App;
