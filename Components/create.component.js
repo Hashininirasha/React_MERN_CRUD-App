@@ -21,6 +21,9 @@ export default class Create extends Component {
                         <label>Add Address :</label>
                         <input type='text' className='form-control'> </input>
                     </div>
+                    <div className='form-group'>
+                        <input type='Submit' value='Register business' className='btn btn-primary'></input>
+                    </div>
                 </form>
             </div>
         )
