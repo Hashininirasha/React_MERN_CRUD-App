@@ -15,8 +15,11 @@ class App extends Component{
             <Link to={'/'} className='navbar-brand'>React Crud Example</Link>
             <div className='collapse navbar-collapse' id='navbarSupportedContent'>
               <ul className='navbar-nav mr-auto'>
-                <li>
+                <li className='nav-item'>
                   <link to={'/'} className='nav-link'>HOME</link>
+                </li>
+                <li className='nav-item'>
+                  <link to={'/create'} className='nav-link'>Craete</link>
                 </li>
               </ul>
             </div>
