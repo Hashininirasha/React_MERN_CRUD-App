@@ -24,6 +24,9 @@ class App extends Component{
                 <li className='nav-item'>
                   <link to={'/index'} className='nav-link'>index</link>
                 </li>
+                <li className='nav-item'>
+                  <link to={'/edit'} className='nav-link'>Edit</link>
+                </li>
               </ul>
             </div>
           </nav>
