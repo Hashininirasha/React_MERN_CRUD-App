@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowerRouter as Router,Switch,Route,Link} from 'react-router-dom'; 
+import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'; 
 
 import Create from './Components/create.component';
 import Edit from './Components/edit.component';
