@@ -1,5 +1,23 @@
 import React, {Component} from 'react';
 export default class Create extends Component {
+
+    constructor(props){
+        super(props);
+        this.onChangePersonName=this.onChangePersonName.bind(this);
+        this.onChangeBusinessName=this.onChangeBusinessName.bind(this);
+        this.onChangeAddress=this.nChangeAddress.bind(this);
+        this.onSubmit=this.onSubmit.bind(this);
+
+        this.state = {
+            person_Name = '',
+            business_name = '',
+            business_NIC = '',
+            business_address = '',
+        }
+    }
+
+
+
     render(){
         return(
             <div style={{marginTop:10}}>
