@@ -5,6 +5,7 @@ export default class Create extends Component {
         super(props);
         this.onChangePersonName=this.onChangePersonName.bind(this);
         this.onChangeBusinessName=this.onChangeBusinessName.bind(this);
+        this.onChangeNIC=this.onChangeNIC.bind(this);
         this.onChangeAddress=this.nChangeAddress.bind(this);
         this.onSubmit=this.onSubmit.bind(this);
 
@@ -18,7 +19,22 @@ export default class Create extends Component {
     onChangePersonName(e){
         this.setState({
             person_Name: e.target.value
-        })
+        });
+    }
+    onChangeBusinessName(e){
+        this.setState({
+            business_name: e.target.value
+        });
+    }
+    onChangeAddress(e){
+        this.setState({
+            business_address: e.target.value
+        });
+    }
+    onChangeNIC(e){
+        this.setState({
+            business_NIC: e.target.value
+        });
     }
 
 
