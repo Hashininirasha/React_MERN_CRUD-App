@@ -15,6 +15,11 @@ export default class Create extends Component {
             business_address = '',
         }
     }
+    onChangePersonName(e){
+        this.setState({
+            person_Name: e.target.value
+        })
+    }
 
 
 
