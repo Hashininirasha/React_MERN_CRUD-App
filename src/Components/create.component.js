@@ -36,6 +36,16 @@ export default class Create extends Component {
             business_NIC: e.target.value
         });
     }
+    onSubmit(e){
+        e.preventdefault();
+        console.log(`The values are ${this.state.person_Name},${this.state.business_name},${this.state.business_NIC},and ${this.state.usiness_address}`)
+        this.setState({
+            person_Name:'',
+            business_name:'',
+            business_address:'',
+            business_NIC:'',
+        })
+    }
 
 
 
