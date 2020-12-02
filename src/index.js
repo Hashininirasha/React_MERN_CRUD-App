@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+function App() {
+  return <h1>Hello React Router</h1>;
+}
 
 ReactDOM.render(
   <BrowserRouter>
-  <App/>
-  </BrowserRouter>, 
-  document.getElementById('root')
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
-serviceWorker.unregister();
