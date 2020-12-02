@@ -7,38 +7,36 @@ import Create from './Components/create.component';
 import Edit from './Components/edit.component';
 import Index from './Components/index.component';
 
-class App extends Component{
+class app extends Component{
   render(){
     return(
       <Router>
-        <div className='container'>
-          <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-            <Link to={'/'} className='navbar-brand'>React Crud Example</Link>
-            <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-              <ul className='navbar-nav mr-auto'>
-                <li className='nav-item'>
-                  <link to={'/'} className='nav-link'>HOME</link>
+        <div className="container">
+          <nav className="nav navbar-expand-lg navbar-light bg-light">
+            <Link to={'/'} className="navbar-brand">REACT</Link>
+            <div className="collapse navbar-collapse" id="navbarsupportedContent">
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                  <Link to={'/'} className="nav-link">Home</Link>
                 </li>
-                <li className='nav-item'>
-                  <link to={'/create'} className='nav-link'>Create</link>
+                <li className="nav-item">
+                  <Link to={'/create'} className="nav-link">Creat</Link>
                 </li>
-                <li className='nav-item'>
-                  <link to={'/index'} className='nav-link'>index</link>
+                <li className="nav-item">
+                  <Link to={'/index'} className="nav-link">Index</Link>
                 </li>
               </ul>
             </div>
-          </nav>
-        
-        <h2>Welcome to React Crud 🤔👧</h2>
-        <switch>
-          <Route exact path = '/create' component = {Create} />
-          <Route exact path = '/edit/:id' component = {Edit} />
-          <Route exact path = '/index' component = {Index} />
-        </switch>
+          </nav><br/>
+          <h2>Welcome to REACT CRUD...</h2><br/>
+          <switch>
+            <Route exact path='/create' Component={Create} />
+            <Route exact path='/edit/:id' Component={Edit} />
+            <Route exact path='/index' Component={Index} />
+          </switch>
         </div>
       </Router>
     );
   }
 }
-
 export default App;
